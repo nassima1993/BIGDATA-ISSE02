@@ -1,4 +1,4 @@
-services:
+﻿services:
   kafka:
     image: apache/kafka:4.1.0
     container_name: isse02-kafka
@@ -25,3 +25,5 @@ services:
 
 volumes:
   kafka_data:
+    external: true
+    name: kafka_kafka_data
