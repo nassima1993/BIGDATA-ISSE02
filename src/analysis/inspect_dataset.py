@@ -2,8 +2,13 @@ import pandas as pd
 from pathlib import Path
 
 # Chemin du dataset
-data_path = Path("data/raw/nasa_cmapps/train_FD001.txt")
-
+data_path = (
+    Path(__file__).resolve().parents[2]
+    / "data"
+    / "raw"
+    / "nasa_cmapps"
+    / "train_FD001.txt"
+)
 # Noms des 26 colonnes
 columns = (
     ["engine_id", "cycle"]
